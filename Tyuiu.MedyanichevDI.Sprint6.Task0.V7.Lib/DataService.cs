@@ -6,7 +6,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task0.V7.Lib
     {
         public double Calculate(int x)
         {
-           double res =Math.Round(Math.Pow(x, 3) / (2 * Math.Pow(x+5,2)));
+           double res =Math.Round(Math.Pow(x, 3) / (2 * Math.Pow(x+5.0,2)));
             return res;
         }
         
