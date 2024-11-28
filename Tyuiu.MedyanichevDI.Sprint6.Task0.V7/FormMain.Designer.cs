@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             groupBoxUs = new GroupBox();
+            pictureBox1 = new PictureBox();
             label5 = new Label();
             groupBoxZn = new GroupBox();
             label1 = new Label();
@@ -38,12 +39,11 @@
             label2 = new Label();
             groupBox1 = new GroupBox();
             buttonDone = new Button();
-            pictureBox1 = new PictureBox();
             pictureBoxFormul = new PictureBox();
             groupBoxUs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBoxZn.SuspendLayout();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormul).BeginInit();
             SuspendLayout();
             // 
@@ -58,6 +58,14 @@
             groupBoxUs.TabStop = false;
             groupBoxUs.Text = "Условие";
             groupBoxUs.Enter += groupBoxUs_Enter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(733, 110);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -136,14 +144,6 @@
             buttonDone.UseVisualStyleBackColor = true;
             buttonDone.Click += buttonDone_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(733, 110);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
             // pictureBoxFormul
             // 
             pictureBoxFormul.Image = (Image)resources.GetObject("pictureBoxFormul.Image");
@@ -153,7 +153,7 @@
             pictureBoxFormul.TabIndex = 4;
             pictureBoxFormul.TabStop = false;
             // 
-            // Form1
+            // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -163,16 +163,16 @@
             Controls.Add(groupBox1);
             Controls.Add(groupBoxZn);
             Controls.Add(groupBoxUs);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormMain";
+            Text = "Медяничев Денис|АСоИУБ 24-1";
             Load += Form1_Load;
             groupBoxUs.ResumeLayout(false);
             groupBoxUs.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBoxZn.ResumeLayout(false);
             groupBoxZn.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormul).EndInit();
             ResumeLayout(false);
         }
