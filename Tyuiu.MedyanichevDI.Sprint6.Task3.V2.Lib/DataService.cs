@@ -9,14 +9,17 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task3.V2.Lib
             int row = matrix.GetUpperBound(0) + 1;
             int colm = matrix.Length / row;
             int con = 0;
-            for (int i = 0; i < 2; i++)
-            {
+            
+            
                 for (int j = 0; j < colm; j++)
                 {
-
+                    if (matrix[0, j] % 2 == 0)
+                    {
+                        matrix[0, j] = 0;
+                    }
                 }
 
-            }
+            
             return matrix;
         }
 
