@@ -13,9 +13,9 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task3.V2.Lib
             {
                 for (int j = 0; j < colm; j++)
                 {
-                    if (matrix[i, j] % 2 == 0)
+                    if (matrix[1, j] % 2 == 0)
                     {
-                        matrix[i, j] = 0;
+                        matrix[1, j] = 0;
                     }
                 }
 
