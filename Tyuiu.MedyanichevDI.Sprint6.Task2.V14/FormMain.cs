@@ -54,5 +54,15 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task2.V14
         {
 
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxUs_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
