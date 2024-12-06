@@ -8,7 +8,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task4.V1.Lib
         {
             double[] mass = new double[stopValue-startValue];
             int con = 0;
-           for (int i = startValue; i < stopValue+1; i++)
+           for (int i = startValue; i <= stopValue; i++)
             {
                 if (i == 1.2)
                 {
