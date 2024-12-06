@@ -13,10 +13,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task3.V2.Lib
             {
                 for (int j = 0; j < colm; j++)
                 {
-                    if (matrix[1, j] % 2 == 0)
-                    {
-                        matrix[1, j] = 0;
-                    }
+
                 }
 
             }
