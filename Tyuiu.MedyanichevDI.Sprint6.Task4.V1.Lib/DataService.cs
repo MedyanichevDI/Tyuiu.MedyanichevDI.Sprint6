@@ -6,7 +6,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task4.V1.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            double[] mass = new double[stopValue-startValue];
+            double[] mass = new double[stopValue-startValue+1];
             int con = 0;
            for (int i = startValue; i <= stopValue; i++)
             {
