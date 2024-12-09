@@ -160,12 +160,13 @@
             // 
             // groupBoxUs
             // 
-            groupBoxUs.Location = new Point(0, 3);
+            groupBoxUs.Location = new Point(6, 25);
             groupBoxUs.Name = "groupBoxUs";
-            groupBoxUs.Size = new Size(314, 80);
+            groupBoxUs.Size = new Size(308, 58);
             groupBoxUs.TabIndex = 15;
             groupBoxUs.TabStop = false;
             groupBoxUs.Text = "Условие";
+            groupBoxUs.Enter += groupBoxUs_Enter;
             // 
             // groupBox2
             // 

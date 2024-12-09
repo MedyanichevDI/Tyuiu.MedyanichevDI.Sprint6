@@ -45,18 +45,23 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task4.V1
         {
             try
             {
-                string path=$@"{Directory.GetCurrentDirectory()}\OutputFileTask4.txt";
-                File.WriteAllText(path,textBoxRes.Text);
-                DialogResult dialogResult=MessageBox.Show("Файл"+path+"Сохранение успешно\n открыть его в блокноте?","Сообщение",MessageBoxButtons.YesNo,MessageBoxIcon.Information);
-                dialogResult=DialogResult.Yes;
+                string path = $@"{Directory.GetCurrentDirectory()}\OutputFileTask4.txt";
+                File.WriteAllText(path, textBoxRes.Text);
+                DialogResult dialogResult = MessageBox.Show("Файл" + path + "Сохранение успешно\n открыть его в блокноте?", "Сообщение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                dialogResult = DialogResult.Yes;
                 System.Diagnostics.Process txt = new System.Diagnostics.Process();
                 txt.StartInfo.FileName = "notepad.exe";
-                txt.StartInfo.Arguments=path;
+                txt.StartInfo.Arguments = path;
             }
             catch
             {
                 MessageBox.Show("Fail");
             }
+        }
+
+        private void groupBoxUs_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
