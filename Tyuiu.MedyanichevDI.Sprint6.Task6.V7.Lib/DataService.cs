@@ -4,7 +4,7 @@ using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.MedyanichevDI.Sprint6.Task6.V7.Lib
 {
-    public class DataService : ISprint6Task6V7
+    public class DataService : ISprint6Task6V7 
     {
         public string CollectTextFromFile(string str, string path)
         {
