@@ -6,7 +6,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task6.V7.Lib
 {
     public class DataService : ISprint6Task6V7 
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
             StringBuilder result = new StringBuilder();
 
@@ -27,7 +27,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task6.V7.Lib
                .Where(words => words.Length >= 3)
                .Select(words => words[2]);
 
-                // Объединяем третьи слова в одну строку
+
                 string res = string.Join(" ", thirdWords);
                 return res;
                
@@ -38,5 +38,8 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task6.V7.Lib
                 throw new Exception($"Ошибка: {ex.Message}", ex);
             }
         }
+
+       
+        
     }
 }
