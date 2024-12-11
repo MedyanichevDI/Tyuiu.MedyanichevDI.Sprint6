@@ -12,24 +12,27 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task6.V7.Lib
 
             try
             {
-                string input;
-                using (var reader = new StreamReader(path))
+                string[] lines = File.ReadAllLines(path);
+
+                //var words = input.Split(new[] { ' ', ',', '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+
+                string res = "";
+                foreach (string line in lines)
                 {
-                    input = reader.ReadToEnd();
+                    // Разделяем строку на слова
+                   var words = line.Split(new[] { ' ', '\t' },
+                        StringSplitOptions.RemoveEmptyEntries);
+
+                    // Если в строке есть 3 или более слов
+                    if (words.Length >= 3)
+                    {
+                        // Добавляем третье слово в результат
+                        res += words[2] + " ";
+                    }
                 }
 
-
-                var words = input.Split(new[] { ' ', ',', '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
-               
-
-                var thirdWords = input
-               .Select(line => input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries))
-               .Where(words => words.Length >= 3)
-               .Select(words => words[2]);
-
-
-                string res = string.Join(" ", thirdWords);
-                return res;
+                return res.Trim();
+            
                
 
             }
