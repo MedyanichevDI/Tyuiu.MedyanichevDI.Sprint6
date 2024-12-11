@@ -6,5 +6,13 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task6.V7
         {
             InitializeComponent();
         }
+
+        private void buttonOpen_Click(object sender, EventArgs e)
+        {
+            openFileDialogTask.ShowDialog();
+            openFilePath = openFileDialogTask.FileName;
+            textBoxload.Text = File.ReadAllText(openFilePath);
+
+        }
     }
 }

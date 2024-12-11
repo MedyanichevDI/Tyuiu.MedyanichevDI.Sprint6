@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,4 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonOpen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        TkSuQmCC
+</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Дан файл InPutFileTask6V7.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Вывести третье слово каждой строки в результирующею строку и вывести ее в textBoxOut.</value>
+  </data>
+  <metadata name="openFileDialogTask.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>156, 17</value>
+  </metadata>
 </root>
