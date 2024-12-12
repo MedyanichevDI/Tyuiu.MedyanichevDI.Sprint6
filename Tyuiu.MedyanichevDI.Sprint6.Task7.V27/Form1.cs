@@ -20,5 +20,12 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task7.V27
         {
 
         }
+
+        private void buttonOpen_Click(object sender, EventArgs e)
+        {
+            openFileDialogTask.ShowDialog();
+            openFilePath = openFileDialogTask.FileName;
+            int[,] arrval = new int[row, colm];
+        }
     }
 }

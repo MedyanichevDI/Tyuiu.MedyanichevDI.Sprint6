@@ -13,7 +13,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task7.V27.Lib
             int colm = line[0].Split(';').Length;
             int[,] arrval = new int[row, colm];
 
-            for(int r = 0; r < row; row++)
+            for(int r = 0; r < row; r++)
             {
                 string[] line_r = line[r].Split(';');
                 for(int c=0; c < colm; c++)
@@ -25,7 +25,7 @@ namespace Tyuiu.MedyanichevDI.Sprint6.Task7.V27.Lib
 
             for (int j = 0; j < colm; j++)
             {
-                if (arrval[4, j] <0 )
+                if (arrval[4, j] < 0 )
                 {
                     arrval[4, j] = -1;
                 }

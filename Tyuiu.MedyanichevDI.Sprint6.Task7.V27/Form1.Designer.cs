@@ -114,6 +114,7 @@
             buttonOpen.Size = new Size(119, 48);
             buttonOpen.TabIndex = 20;
             buttonOpen.UseVisualStyleBackColor = true;
+            buttonOpen.Click += buttonOpen_Click;
             // 
             // buttonDone
             // 
