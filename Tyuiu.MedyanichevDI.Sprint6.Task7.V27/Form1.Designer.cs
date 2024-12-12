@@ -31,41 +31,42 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox3 = new GroupBox();
-            dataGridView2 = new DataGridView();
+            dataGridViewOut = new DataGridView();
             textBox1 = new TextBox();
             groupBox1 = new GroupBox();
-            dataGridView1 = new DataGridView();
+            dataGridViewIn = new DataGridView();
             groupBox2 = new GroupBox();
-            buttonOpen = new Button();
             buttonDone = new Button();
+            buttonSave = new Button();
             buttonInfo = new Button();
             openFileDialogTask = new OpenFileDialog();
             toolTipbutton = new ToolTip(components);
             saveFileDialogMatrix = new SaveFileDialog();
+            panelLeft = new Panel();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOut).BeginInit();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIn).BeginInit();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(dataGridView2);
+            groupBox3.Controls.Add(dataGridViewOut);
             groupBox3.Location = new Point(564, 181);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(550, 346);
+            groupBox3.Size = new Size(550, 383);
             groupBox3.TabIndex = 29;
             groupBox3.TabStop = false;
             groupBox3.Text = "Вывод";
             // 
-            // dataGridView2
+            // dataGridViewOut
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(6, 26);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(537, 318);
-            dataGridView2.TabIndex = 0;
+            dataGridViewOut.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewOut.Location = new Point(6, 22);
+            dataGridViewOut.Name = "dataGridViewOut";
+            dataGridViewOut.Size = new Size(537, 343);
+            dataGridViewOut.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -78,26 +79,26 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(dataGridView1);
+            groupBox1.Controls.Add(dataGridViewIn);
             groupBox1.Location = new Point(6, 179);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(534, 346);
+            groupBox1.Size = new Size(534, 385);
             groupBox1.TabIndex = 28;
             groupBox1.TabStop = false;
             groupBox1.Text = "Вывод";
             // 
-            // dataGridView1
+            // dataGridViewIn
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 22);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(525, 320);
-            dataGridView1.TabIndex = 0;
+            dataGridViewIn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewIn.Location = new Point(3, 22);
+            dataGridViewIn.Name = "dataGridViewIn";
+            dataGridViewIn.Size = new Size(525, 345);
+            dataGridViewIn.TabIndex = 0;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(buttonOpen);
             groupBox2.Controls.Add(buttonDone);
+            groupBox2.Controls.Add(buttonSave);
             groupBox2.Controls.Add(buttonInfo);
             groupBox2.Location = new Point(6, 12);
             groupBox2.Name = "groupBox2";
@@ -105,26 +106,27 @@
             groupBox2.TabIndex = 27;
             groupBox2.TabStop = false;
             // 
-            // buttonOpen
-            // 
-            buttonOpen.FlatStyle = FlatStyle.Flat;
-            buttonOpen.Image = (Image)resources.GetObject("buttonOpen.Image");
-            buttonOpen.Location = new Point(21, 22);
-            buttonOpen.Name = "buttonOpen";
-            buttonOpen.Size = new Size(119, 48);
-            buttonOpen.TabIndex = 20;
-            buttonOpen.UseVisualStyleBackColor = true;
-            buttonOpen.Click += buttonOpen_Click;
-            // 
             // buttonDone
             // 
             buttonDone.FlatStyle = FlatStyle.Flat;
-            buttonDone.Image = Properties.Resources.door_out;
-            buttonDone.Location = new Point(173, 24);
+            buttonDone.Image = (Image)resources.GetObject("buttonDone.Image");
+            buttonDone.Location = new Point(21, 22);
             buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(139, 46);
-            buttonDone.TabIndex = 18;
+            buttonDone.Size = new Size(119, 48);
+            buttonDone.TabIndex = 20;
             buttonDone.UseVisualStyleBackColor = true;
+            buttonDone.Click += buttonDone_Click;
+            // 
+            // buttonSave
+            // 
+            buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.Image = Properties.Resources.door_out;
+            buttonSave.Location = new Point(173, 24);
+            buttonSave.Name = "buttonSave";
+            buttonSave.Size = new Size(139, 46);
+            buttonSave.TabIndex = 18;
+            buttonSave.UseVisualStyleBackColor = true;
+            buttonSave.Click += buttonSave_Click;
             // 
             // buttonInfo
             // 
@@ -139,11 +141,19 @@
             // 
             openFileDialogTask.FileName = "openFileDialog1";
             // 
+            // panelLeft
+            // 
+            panelLeft.Location = new Point(653, 12);
+            panelLeft.Name = "panelLeft";
+            panelLeft.Size = new Size(200, 100);
+            panelLeft.TabIndex = 21;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1126, 576);
+            Controls.Add(panelLeft);
             Controls.Add(groupBox3);
             Controls.Add(textBox1);
             Controls.Add(groupBox1);
@@ -152,9 +162,9 @@
             Text = "Медяничев Денис|АСоИУБ 24-1";
             Load += Form1_Load;
             groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOut).EndInit();
             groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIn).EndInit();
             groupBox2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -163,16 +173,17 @@
         #endregion
 
         private GroupBox groupBox3;
-        private DataGridView dataGridView2;
+        private DataGridView dataGridViewOut;
         private TextBox textBox1;
         private GroupBox groupBox1;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewIn;
         private GroupBox groupBox2;
-        private Button buttonOpen;
         private Button buttonDone;
+        private Button buttonSave;
         private Button buttonInfo;
         private OpenFileDialog openFileDialogTask;
         private ToolTip toolTipbutton;
         private SaveFileDialog saveFileDialogMatrix;
+        private Panel panelLeft;
     }
 }
